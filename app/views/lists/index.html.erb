@@ -5,7 +5,7 @@
   <p>タイトル</p>
   <span>
     <!--list.idはlistsコントローラのshowアクションの変数、list.カラム名、カリキュラム3章確認-->
-    <%= link_to list.title,"lists/#{list.id}" %> 
+    <%= link_to list.title,list_path(list.id) %> 
   </span>
 
 <% end %>
