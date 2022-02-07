@@ -3,6 +3,9 @@
 <% @lists.each do |list| %>
 
   <p>タイトル</p>
-  <span><%= list.title %></span>
+  <span>
+    <!--list.idはlistsコントローラのshowアクションの変数、list.カラム名、カリキュラム3章確認-->
+    <%= link_to list.title,"lists/#{list.id}" %> 
+  </span>
 
 <% end %>
