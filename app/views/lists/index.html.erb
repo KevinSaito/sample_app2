@@ -8,8 +8,8 @@
     <% end %>
     <div class = "list-comment">
       <!--list.idはlistsコントローラのshowアクションの変数、list.カラム名、カリキュラム3章確認-->
-      <span class="list-body"><%= list.body ></span>
-      <span><%= link_to list.title,list_path(list.id) %> </span>
+      <span class="list-body"><%= list.body %></span>
+      <span class="list-title"><%= link_to list.title,list_path(list.id) %> </span>
     </div>
   </div>
 <% end %>
